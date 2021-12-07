@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./style.css">
+    <link  rel="shortcut icon" href="./icone.jpg" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Game</title>
+</head>
+
+<body>
+    <h1 id="titre"> Let's play a Game </h1>
+    <p id="titre">
+        Select a number between 1 and 100 <br> You have a maximum of 10 attempts  </p>
+    <div class="box">
+        <div id="attempts">
+            <h5> Attempts left :</h5>
+            <h6 class="counte"></h6> 
+        </div>       
+        <h4 id="label" for="number">Enter a numbre :</h4>    
+        <form id="input_nbr">
+            <div class="btn">
+            <input type="number" id="number" min="0" max="100" required>
+            <button type="submit" id="btnplay"> Try it </button>
+            </div>
+            <h4 id="message"> Good luck</h4>
+            <button  id="btnreplay"> Play again? </button>
+        </form>
+    </div>
+
+    <script src="main.js"> 
+    </script>
+</body>
+</html>
