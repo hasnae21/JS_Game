@@ -1,35 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="./style.css">
-    <link  rel="shortcut icon" href="./icone.jpg" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="./icone.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JS-Game</title>
-</head>
+  </head>
 
-<body>
-    <h1 id="titre"> Let's play a Game </h1>
-    <p id="titre">
-        Select a number between 1 and 100 <br> You have a maximum of 10 attempts  </p>
+  <body>
+    <h1>Let's play a Game</h1>
+    <p id="titre">Select a number between <span>1</span> and <span> 100</span></p>
+    <p id="condition">You have only <q>10</q> attempts</p>
     <div class="box">
+      <h4 id="label" for="number">Enter a numbre :</h4>
+      <form id="input_nbr">
+        <div class="btn">
+          <input type="number" id="number" min="1" max="100" required />
+          <button type="submit" id="btnplay">Try it</button>
+        </div>
+        <img class="imageTW" src="won1.gif" />
+        <img class="imageW" src="won.gif" />
+        <img class="imageL" src="loose.gif" />
+        <h4 id="message">Good luck</h4>
         <div id="attempts">
-            <h5> Attempts left :</h5>
-            <h6 class="counte"></h6> 
-        </div>       
-        <h4 id="label" for="number">Enter a numbre :</h4>    
-        <form id="input_nbr">
-            <div class="btn">
-            <input type="number" id="number" min="0" max="100" required>
-            <button type="submit" id="btnplay"> Try it </button>
-            </div>
-            <h4 id="message"> Good luck</h4>
-            <button  id="btnreplay"> Play again? </button>
-        </form>
+          <h5>You still have :</h5>
+          <h4 class="counte"></h4>
+          <h5>attempts</h5>
+        </div>
+        <button id="btnreplay">Play again?</button>
+      </form>
     </div>
 
-    <script src="main.js"> 
-    </script>
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>
