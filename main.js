@@ -2,7 +2,7 @@
         var randomNumber= Math.floor(Math.random() * 100)+1;
         console.log(randomNumber);
 // DOM
-const message = document.getElementById('message');
+// const message = document.getElementById('message');
 const form= document.getElementById('input_nbr');
 const input= document.getElementById('number');
 const btnplay = document.getElementById('btnplay');
