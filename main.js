@@ -2,7 +2,7 @@
         var randomNumber= Math.floor(Math.random() * 100)+1;
         console.log(randomNumber);
 // DOM
-// const message = document.getElementById('message');
+const message = document.getElementById('message');
 const form= document.getElementById('input_nbr');
 const input= document.getElementById('number');
 const btnplay = document.getElementById('btnplay');
@@ -42,11 +42,11 @@ const play = () => {
         }
         if( val_Input !== randomNumber){
             if(val_Input < randomNumber ){
-                message.textContent = `The number is smaller, choose a higher one`;
+//                 message.textContent = `The number is smaller, choose a higher one`;
                 btnreplay.style.display = "none";
                 tries.style.display= "flex";
             }else if(val_Input > randomNumber  ){
-                message.textContent = `The number is larger, choose a smaller one`;
+//                 message.textContent = `The number is larger, choose a smaller one`;
                 btnreplay.style.display = "none";
                 tries.style.display= "flex";
             }
