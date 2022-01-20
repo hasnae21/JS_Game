@@ -1,6 +1,5 @@
 // randome number with Math random
         var randomNumber= Math.floor(Math.random() * 100)+1;
-        console.log(randomNumber);
 // DOM
 const message = document.getElementById('message');
 const form= document.getElementById('input_nbr');
